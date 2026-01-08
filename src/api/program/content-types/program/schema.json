@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "programs",
+  "info": {
+    "singularName": "program",
+    "pluralName": "programs",
+    "displayName": "Program"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "programSubhead": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "programthumbnail": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "publishedDate": {
+      "type": "date"
+    },
+    "chapters": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::chapter.chapter",
+      "mappedBy": "program"
+    },
+    "resources": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::resource.resource",
+      "inversedBy": "programs"
+    },
+    "programFeatures": {
+      "type": "component",
+      "component": "shared.program-features",
+      "repeatable": true,
+      "max": 3
+    },
+    "numberChapters": {
+      "type": "string"
+    },
+    "numberLessons": {
+      "type": "string"
+    },
+    "ctaText": {
+      "type": "text"
+    },
+    "testimonials": {
+      "type": "component",
+      "component": "shared.program-testimonials",
+      "repeatable": true
+    }
+  }
+}

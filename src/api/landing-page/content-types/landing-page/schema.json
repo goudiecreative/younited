@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "landing-pages",
+  "info": {
+    "singularName": "landing-page",
+    "pluralName": "landing-pages",
+    "displayName": "Landing Page"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": {
+      "type": "string"
+    },
+    "program_id": {
+      "type": "integer"
+    },
+    "subHead": {
+      "type": "text"
+    },
+    "heroDescription": {
+      "type": "text"
+    },
+    "numberChapters": {
+      "type": "string"
+    },
+    "numberLessons": {
+      "type": "string"
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "heroCtaText": {
+      "type": "string"
+    },
+    "heroCtaUrl": {
+      "type": "string"
+    },
+    "testimonials": {
+      "type": "component",
+      "component": "shared.testimonial",
+      "repeatable": true
+    },
+    "categoriesHighlighted": {
+      "type": "json"
+    },
+    "stats": {
+      "type": "json"
+    },
+    "faq": {
+      "type": "component",
+      "component": "shared.faq",
+      "repeatable": true
+    },
+    "featureHeading1": {
+      "type": "string"
+    },
+    "featureHeading2": {
+      "type": "string"
+    },
+    "featureHeading3": {
+      "type": "string"
+    },
+    "feature1Description": {
+      "type": "text"
+    },
+    "feature2Description": {
+      "type": "text"
+    },
+    "feature3Description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resources",
+  "info": {
+    "singularName": "resource",
+    "pluralName": "resources",
+    "displayName": "Resource"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "resourceType": {
+      "type": "enumeration",
+      "enum": [
+        "PDF",
+        "Video",
+        "Image",
+        "Other"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "programs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::program.program",
+      "mappedBy": "resources"
+    }
+  }
+}

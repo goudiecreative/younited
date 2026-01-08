@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "users",
+  "info": {
+    "singularName": "user",
+    "pluralName": "users",
+    "displayName": "User"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": false
+    }
+  },
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "password": {
+      "type": "password",
+      "required": true
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "Student",
+        "Instructor",
+        "Admin"
+      ]
+    },
+    "points": {
+      "type": "integer",
+      "default": 0
+    },
+    "badges": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::badge.badge",
+      "inversedBy": "users"
+    },
+    "events": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::userevent.userevent",
+      "mappedBy": "user"
+    }
+  }
+}

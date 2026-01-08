@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chapters",
+  "info": {
+    "singularName": "chapter",
+    "pluralName": "chapters",
+    "displayName": "Chapter"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": false
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "program": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::program.program",
+      "inversedBy": "chapters"
+    },
+    "lessons": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::lesson.lesson",
+      "mappedBy": "chapter"
+    }
+  }
+}

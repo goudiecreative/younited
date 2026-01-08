@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "userevents",
+  "info": {
+    "singularName": "userevent",
+    "pluralName": "userevents",
+    "displayName": "Userevent"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": false
+    }
+  },
+  "attributes": {
+    "eventType": {
+      "type": "enumeration",
+      "enum": [
+        "lesson_completed",
+        "program_completed",
+        "badge_awarded",
+        "quiz_attempted"
+      ]
+    },
+    "relatedLesson": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::lesson.lesson"
+    },
+    "relatedProgram": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::program.program"
+    },
+    "relatedBadge": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::badge.badge"
+    },
+    "timestamp": {
+      "type": "datetime"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::user.user",
+      "inversedBy": "events"
+    }
+  }
+}

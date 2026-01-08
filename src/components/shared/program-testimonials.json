@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_program_testimonials",
+  "info": {
+    "displayName": "programTestimonials"
+  },
+  "options": {},
+  "attributes": {
+    "testimonialName": {
+      "type": "string"
+    },
+    "workTitle": {
+      "type": "string"
+    },
+    "testimonial": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

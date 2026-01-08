@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_program_features",
+  "info": {
+    "displayName": "programFeatures"
+  },
+  "options": {},
+  "attributes": {
+    "featureHeading": {
+      "type": "string"
+    },
+    "featureDescription": {
+      "type": "text"
+    },
+    "featureImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

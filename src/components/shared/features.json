@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_features",
+  "info": {
+    "displayName": "features"
+  },
+  "options": {},
+  "attributes": {
+    "featureHeading": {
+      "type": "string"
+    },
+    "featureDescription": {
+      "type": "text"
+    },
+    "featureImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_testimonials",
+  "info": {
+    "displayName": "Testimonial"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "quote": {
+      "type": "text"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "workTitle": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lessons",
+  "info": {
+    "singularName": "lesson",
+    "pluralName": "lessons",
+    "displayName": "Lesson"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "video",
+        "PDF",
+        "text",
+        "assessment"
+      ]
+    },
+    "lessonSummary": {
+      "type": "text"
+    },
+    "videoUid": {
+      "type": "string"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "order": {
+      "type": "integer"
+    },
+    "chapter": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::chapter.chapter",
+      "inversedBy": "lessons"
+    },
+    "program": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::program.program"
+    }
+  }
+}

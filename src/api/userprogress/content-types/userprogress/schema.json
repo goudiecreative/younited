@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "userprogresses",
+  "info": {
+    "singularName": "userprogress",
+    "pluralName": "userprogresses",
+    "displayName": "Userprogress"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": false
+    }
+  },
+  "attributes": {
+    "points": {
+      "type": "integer"
+    },
+    "lastActivityTimestamp": {
+      "type": "datetime"
+    }
+  }
+}
