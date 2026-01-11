@@ -51,7 +51,7 @@
       "relation": "oneToOne",
       "target": "api::program.program"
     },
-    "programs": {
+    "Lessons": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::program.program",

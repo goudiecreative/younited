@@ -562,6 +562,7 @@ export interface ApiLessonLesson extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    Lessons: Schema.Attribute.Relation<'manyToMany', 'api::program.program'>;
     lessonSummary: Schema.Attribute.Text;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -571,7 +572,6 @@ export interface ApiLessonLesson extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     order: Schema.Attribute.Integer;
     program: Schema.Attribute.Relation<'oneToOne', 'api::program.program'>;
-    programs: Schema.Attribute.Relation<'manyToMany', 'api::program.program'>;
     publishedAt: Schema.Attribute.DateTime;
     thumbnail: Schema.Attribute.Media<'images'>;
     title: Schema.Attribute.String & Schema.Attribute.Required;

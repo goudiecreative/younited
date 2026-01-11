@@ -48,7 +48,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::lesson.lesson",
-      "mappedBy": "programs"
+      "mappedBy": "Lessons"
     },
     "resources": {
       "type": "relation",
