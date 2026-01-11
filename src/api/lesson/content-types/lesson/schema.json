@@ -50,6 +50,12 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::program.program"
+    },
+    "programs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::program.program",
+      "inversedBy": "programLessons"
     }
   }
 }

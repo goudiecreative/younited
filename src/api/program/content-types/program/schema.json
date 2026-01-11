@@ -44,6 +44,12 @@
       "target": "api::chapter.chapter",
       "mappedBy": "program"
     },
+    "programLessons": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::lesson.lesson",
+      "mappedBy": "programs"
+    },
     "resources": {
       "type": "relation",
       "relation": "manyToMany",
@@ -62,13 +68,13 @@
     "numberLessons": {
       "type": "string"
     },
-    "ctaText": {
-      "type": "text"
-    },
     "testimonials": {
       "type": "component",
       "component": "shared.program-testimonials",
       "repeatable": true
+    },
+    "ctaText": {
+      "type": "text"
     }
   }
 }
