@@ -667,6 +667,7 @@ export interface ApiResourceResource extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     programs: Schema.Attribute.Relation<'manyToMany', 'api::program.program'>;
     publishedAt: Schema.Attribute.DateTime;
+    resourceCategory: Schema.Attribute.String;
     resourceType: Schema.Attribute.Enumeration<
       ['PDF', 'Video', 'Image', 'Other']
     >;
