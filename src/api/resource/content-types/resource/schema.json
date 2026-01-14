@@ -18,6 +18,16 @@
     "description": {
       "type": "blocks"
     },
+    "thumnail": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
     "file": {
       "type": "media",
       "multiple": false,

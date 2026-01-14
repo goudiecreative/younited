@@ -672,6 +672,7 @@ export interface ApiResourceResource extends Struct.CollectionTypeSchema {
       ['PDF', 'Video', 'Image', 'Other']
     >;
     slug: Schema.Attribute.UID<'title'>;
+    thumnail: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
