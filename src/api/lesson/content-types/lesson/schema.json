@@ -24,6 +24,9 @@
         "assessment"
       ]
     },
+    "programText": {
+      "type": "blocks"
+    },
     "lessonSummary": {
       "type": "text"
     },

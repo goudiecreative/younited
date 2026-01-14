@@ -572,6 +572,7 @@ export interface ApiLessonLesson extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     order: Schema.Attribute.Integer;
     program: Schema.Attribute.Relation<'oneToOne', 'api::program.program'>;
+    programText: Schema.Attribute.Blocks;
     publishedAt: Schema.Attribute.DateTime;
     thumbnail: Schema.Attribute.Media<'images'>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
