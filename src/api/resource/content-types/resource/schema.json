@@ -53,6 +53,7 @@
       "enum": [
         "PDF",
         "Video",
+        "Audio",
         "Image",
         "Other"
       ]

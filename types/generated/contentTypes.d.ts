@@ -671,7 +671,7 @@ export interface ApiResourceResource extends Struct.CollectionTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     resourceCategory: Schema.Attribute.String;
     resourceType: Schema.Attribute.Enumeration<
-      ['PDF', 'Video', 'Image', 'Other']
+      ['PDF', 'Video', 'Audio', 'Image', 'Other']
     >;
     slug: Schema.Attribute.UID<'title'>;
     thumnail: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
