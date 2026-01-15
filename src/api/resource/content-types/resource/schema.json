@@ -38,6 +38,16 @@
         "audios"
       ]
     },
+    "Media": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
     "resourceType": {
       "type": "enumeration",
       "enum": [

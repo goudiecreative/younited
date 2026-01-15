@@ -666,6 +666,7 @@ export interface ApiResourceResource extends Struct.CollectionTypeSchema {
       'api::resource.resource'
     > &
       Schema.Attribute.Private;
+    Media: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     programs: Schema.Attribute.Relation<'manyToMany', 'api::program.program'>;
     publishedAt: Schema.Attribute.DateTime;
     resourceCategory: Schema.Attribute.String;
