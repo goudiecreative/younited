@@ -1,1 +1,9 @@
-export default () => ({});
+export default () => ({
+  upload: {
+    config: {
+      providerOptions: {
+        public: true,
+      },
+    },
+  },
+});
