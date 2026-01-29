@@ -602,6 +602,8 @@ export interface ApiProgramProgram extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     ctaText: Schema.Attribute.Text;
     description: Schema.Attribute.Text;
+    facilitator: Schema.Attribute.String;
+    facilitatorDescription: Schema.Attribute.RichText;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',

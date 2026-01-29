@@ -75,6 +75,12 @@
     },
     "ctaText": {
       "type": "text"
+    },
+    "facilitator": {
+      "type": "string"
+    },
+    "facilitatorDescription": {
+      "type": "richtext"
     }
   }
 }
