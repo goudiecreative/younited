@@ -27,6 +27,9 @@
     "lessonSummary": {
       "type": "text"
     },
+    "ProgramInfo": {
+      "type": "richtext"
+    },
     "videoUid": {
       "type": "string"
     },
@@ -56,19 +59,6 @@
       "relation": "manyToMany",
       "target": "api::program.program",
       "inversedBy": "programLessons"
-    },
-    "ProgramInfo": {
-      "type": "richtext",
-      "conditions": {
-        "visible": {
-          "==": [
-            {
-              "var": ""
-            },
-            ""
-          ]
-        }
-      }
     }
   }
 }
